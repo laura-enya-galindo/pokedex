@@ -38,38 +38,11 @@ yarn dev
 bun run dev
 ```
 
-## Production
 
-Build the application for production:
+Joshua Jourdain
+Laura Galindo
+Lauryne Tranchant
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+On a préféré utiliser Nuxt car on le trouve plus intuitif
+Préférence personnel pour le choix, on était tous d'accord
+On avait eu un cours sur Nuxt la veille donc on l'avait aussi plus en mémoire que Svelte
