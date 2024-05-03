@@ -19,6 +19,10 @@ import { useRouter } from 'vue-router';
 
 
 <style>
+    body {
+        margin: 1.25rem;
+    }
+
     button {
         height: 2.5rem;
         padding: 0rem 1.875rem;
