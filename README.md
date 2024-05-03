@@ -1,10 +1,8 @@
-Joshua Jourdain,
-Laura Galindo,
-Lauryne Tranchant
+Joshua Jourdain, Laura Galindo, Lauryne Tranchant
 
-On a préféré utiliser Nuxt car on le trouve plus intuitif
-Préférence personnel pour le choix, on était tous d'accord
-On avait eu un cours sur Nuxt la veille donc on l'avait aussi plus en mémoire que Svelte
+- On a préféré utiliser Nuxt car on le trouve plus intuitif
+- Préférence personnel pour le choix, on était tous d'accord
+- On avait eu un cours sur Nuxt la veille donc on l'avait aussi plus en mémoire que Svelte
 
 # Nuxt 3 Minimal Starter
 
