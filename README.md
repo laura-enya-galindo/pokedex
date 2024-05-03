@@ -1,5 +1,5 @@
-Joshua Jourdain
-Laura Galindo
+Joshua Jourdain,
+Laura Galindo,
 Lauryne Tranchant
 
 On a préféré utiliser Nuxt car on le trouve plus intuitif
