@@ -6,7 +6,8 @@ import { ref, reactive } from 'vue';
 
     function searchPokemon() {
         if (search.trim() !== "") {
-            // Recherche d'un pokémon
+            // Recherche d'un pokémon lorsque le champ n'est pas vide
+            
         }
         search = "";
     }
