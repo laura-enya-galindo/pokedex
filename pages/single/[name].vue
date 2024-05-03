@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-    <h1>{{ name }}</h1>
+    <h1>{{ $route.params.name }}</h1>
 </template>
