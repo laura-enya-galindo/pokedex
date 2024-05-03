@@ -1,6 +1,6 @@
 <script setup lang="ts">
     definePageMeta({
-        layout: 'custom-search'
+        layout: 'custom'
     });
 
     const router = useRouter();

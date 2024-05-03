@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router';
 
     const { data: pokemonData } = await useFetch('https://pokeapi.co/api/v2/pokemon/')
     const pokemonList = pokemonData.value.results.slice(0, 10);
+    
     const router = useRouter();
 
     let searchPokemon = ref("");
