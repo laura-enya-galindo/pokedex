@@ -1,33 +1,57 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
-    let search: string = "";
-    const pokemonList = reactive<string[]>([]);
+    const { data: pokemonData } = await useFetch('https://pokeapi.co/api/v2/pokemon/')
+    const pokemonList = pokemonData.value.results.slice(0, 10);
+    const router = useRouter();
 
-    function searchPokemon() {
-        if (search.trim() !== "") {
-            // Recherche d'un pokémon lorsque le champ n'est pas vide
-            
-        }
-        search = "";
-    }
+    const goToPokemon = (pokemonName: string) => {
+        router.push(`/single/${pokemonName}`);
+    };
 
-    function goToInformation(index: number) {
-
-    }
 </script>
 
 <template>
     <div>
-        <input type="text" v-model="search">
-        <button @click="searchPokemon">Search Pokemon</button>
-
         <ul>
-            <li v-for="(pokemon, i) in pokemonList">{{ pokemon }} <button @click="goToInformation(i)"> More information </button></li>
+            <li v-for="(pokemon, i) in pokemonList" :key="i" class="pokemon-item" @click="goToPokemon(pokemon.name)">
+                <div class="pokemon-card">
+                    <p>{{ pokemon.name }}</p>
+                    <button>More information</button>
+                </div>
+            </li>
         </ul>
-
-        <!--Créer condition pour afficher le résultat de la recherche-->
-        <p v-if="pokemonList.length >= 10">Tu as 10 tâches à faire !</p>
-
     </div>
 </template>
+
+<style>
+.pokemon-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.pokemon-card {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pokemon-card button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pokemon-card button:hover {
+  background-color: #0056b3;
+}
+</style>
