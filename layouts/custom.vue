@@ -12,7 +12,7 @@ import { useRouter } from 'vue-router';
 
 <template>
     <div>
-        <button @click="goToHome()"> Home </button>
+        <button @click="goToHome()"> Home Page </button>
         <slot/>
     </div>
 </template>

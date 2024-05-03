@@ -21,7 +21,7 @@ import { useRouter } from 'vue-router';
 
 <template>
     <div>
-      <input class="home-search" type="search" name="pokemon-search" id="pokemon-search" v-model="searchPokemon" v-on:keyup.enter="goToPokemonFromSearch" placeholder="Search your pokemon">
+      <input class="home-search" type="search" name="pokemon-search" id="pokemon-search" v-model="searchPokemon" v-on:keyup.enter="goToPokemonFromSearch" placeholder="Search for a Pokemon">
       <div class="container-pokemons">
           <div v-for="(pokemon, i) in pokemonList" :key="i" class="pokemon-item" @click="goToPokemonFromList(pokemon.name)">
               <div class="pokemon-card">
