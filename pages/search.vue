@@ -1,5 +1,4 @@
 <script setup lang="ts">
-const { data: pokemon } = await useFetch('https://pokeapi.co/api/v2/pokemon/')
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
