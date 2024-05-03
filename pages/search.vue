@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
+    definePageMeta({
+        layout: 'custom-search'
+    });
 
-const router = useRouter();
+    const router = useRouter();
 
-let searchPokemon = ref("");
+    let searchPokemon = ref("");
 
-const goToPokemon = () => {
-    router.push(`/single/${searchPokemon.value}`);
-};
-
-
+    const goToPokemon = () => {
+        router.push(`/single/${searchPokemon.value}`);
+    };
 </script>
 
 <template>
