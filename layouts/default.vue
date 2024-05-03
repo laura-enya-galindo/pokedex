@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Some default layout content shared across</p>
+        <button>Pokemon search page</button>
         <slot/>
     </div>
 </template>
